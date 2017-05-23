@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mazouri.mvp.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="User ID"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/tv_id"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_id"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_id"
+        android:layout_toRightOf="@id/tv_username"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_username"
+        android:gravity="center_horizontal"
+        android:text="User age"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_username"
+        android:layout_toRightOf="@id/tv_age"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_age"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/loadButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:textAllCaps="false"
+        android:text="Load"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
